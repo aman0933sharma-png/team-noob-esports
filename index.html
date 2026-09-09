@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEAM NOOB eSports — Official BGMI Organization</title>
+  <meta name="description" content="TEAM NOOB eSports — official Battlegrounds Mobile India organization. Born noob. Built legend." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23080a0d'/><text x='32' y='42' text-anchor='middle' font-family='Arial Black' font-size='28' fill='%23ff6a00'>N</text></svg>" />
+</head>
+<body>
+  <div id="webgl"></div>
+  <div class="noise"></div>
+  <div class="vignette"></div>
+  <div class="scanlines"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" data-magnetic>
+      <img class="brand-logo" src="assets/logo.jpg" alt="Team Noob eSports" />
+      <span class="brand-text">
+        TEAM <b>NOOB</b>
+        <small>eSPORTS</small>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="#roster">Roster</a>
+      <a href="#achievements">Titles</a>
+      <a href="#matches">Matches</a>
+      <a href="#academy">Academy</a>
+      <a href="#join" class="cta-mini">Join Us</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#roster">Roster</a>
+    <a href="#achievements">Titles</a>
+    <a href="#matches">Matches</a>
+    <a href="#academy">Academy</a>
+    <a href="#join">Join Us</a>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-hud">
+        <span class="hud-chip">// BGMI DIVISION</span>
+        <span class="hud-chip live"><i></i> LIVE OPS</span>
+        <span class="hud-chip">INDIA · EST. 2026</span>
+      </div>
+
+      <p class="eyebrow">DROP. FIGHT. RESET.</p>
+      <h1 class="hero-title">
+        <span class="line">BORN</span>
+        <span class="line accent">NOOB.</span>
+        <span class="line">BUILT</span>
+        <span class="line accent gold">LEGEND.</span>
+      </h1>
+      <p class="hero-sub">
+        Official Battlegrounds Mobile India organization. We don't hide the noob era —
+        we weaponize it. Every wipe is footage. Every clutch is culture.
+      </p>
+      <div class="hero-actions">
+        <a href="#join" class="btn primary" data-magnetic>Recruit Now</a>
+        <a href="#roster" class="btn ghost" data-magnetic>Meet the Squad</a>
+      </div>
+
+      <div class="hero-stats">
+        <div><b>04</b><span>Pro Players</span></div>
+        <div><b>12+</b><span>Scrims / Week</span></div>
+        <div><b>BGMI</b><span>Primary Title</span></div>
+        <div><b>IN</b><span>Based India</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>HOT DROP PROTOCOL</span><i></i>
+        <span>ZONE IS CLOSING</span><i></i>
+        <span>NOOB NEVER QUITS</span><i></i>
+        <span>CHICKEN DINNER CULTURE</span><i></i>
+        <span>BGMI · INDIA</span><i></i>
+        <span>HOT DROP PROTOCOL</span><i></i>
+        <span>ZONE IS CLOSING</span><i></i>
+        <span>NOOB NEVER QUITS</span><i></i>
+        <span>CHICKEN DINNER CULTURE</span><i></i>
+        <span>BGMI · INDIA</span><i></i>
+      </div>
+    </section>
+
+    <section class="section" id="roster">
+      <div class="section-head">
+        <p class="kicker">01 — ACTIVE ROSTER</p>
+        <h2>The Drop Squad</h2>
+        <p>Four-man core built for BGMI circuit. Roles locked. Ego left in the lobby.</p>
+      </div>
+      <div class="roster-grid">
+        <article class="player card-3d" data-role="IGL">
+          <img class="player-photo" src="assets/player-igl.jpg" alt="N0OB IGL" />
+          <div class="player-bg"></div>
+          <div class="player-meta">IGL · CALLER</div>
+          <h3>N0OB</h3>
+          <p class="ign">Aman “N0OB” Sharma</p>
+          <ul>
+            <li>Hot-drop reads</li>
+            <li>Late-game rotations</li>
+            <li>Comms first</li>
+          </ul>
+          <div class="player-tag">#01</div>
+        </article>
+        <article class="player card-3d" data-role="ASSAULTER">
+          <img class="player-photo" src="assets/player-assaulter.jpg" alt="PH4NTOM assaulter" />
+          <div class="player-bg"></div>
+          <div class="player-meta">ASSAULTER</div>
+          <h3>PH4NTOM</h3>
+          <p class="ign">Entry · First contact</p>
+          <ul>
+            <li>Close-range spray</li>
+            <li>Building takes</li>
+            <li>Trade discipline</li>
+          </ul>
+          <div class="player-tag">#02</div>
+        </article>
+        <article class="player card-3d" data-role="SNIPER">
+          <img class="player-photo" src="assets/player-sniper.jpg" alt="VIRA sniper" />
+          <div class="player-bg"></div>
+          <div class="player-meta">SNIPER / COVER</div>
+          <h3>VIRA</h3>
+          <p class="ign">Long-range denial</p>
+          <ul>
+            <li>Peak timing</li>
+            <li>Zone edge holds</li>
+            <li>Info hunter</li>
+          </ul>
+          <div class="player-tag">#03</div>
+        </article>
+        <article class="player card-3d" data-role="SUPPORT">
+          <img class="player-photo" src="assets/player-support.jpg" alt="NEXUS support" />
+          <div class="player-bg"></div>
+          <div class="player-meta">SUPPORT / IGL 2</div>
+          <h3>NEXUS</h3>
+          <p class="ign">Utility &amp; clutch</p>
+          <ul>
+            <li>Nade lines</li>
+            <li>Revive protocols</li>
+            <li>Last-circle brain</li>
+          </ul>
+          <div class="player-tag">#04</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="achievements">
+      <div class="section-head">
+        <p class="kicker">02 — HONOR BOARD</p>
+        <h2>Titles &amp; Ops</h2>
+      </div>
+      <div class="honor-list">
+        <div class="honor">
+          <span class="year">2026</span>
+          <div>
+            <h3>Circuit Launch Season</h3>
+            <p>Org founded. Academy pipeline opened. First official BGMI roster locked.</p>
+          </div>
+          <b>FOUNDING</b>
+        </div>
+        <div class="honor">
+          <span class="year">2026</span>
+          <div>
+            <h3>Open Qualifier Grind</h3>
+            <p>Weekly tournament stack — community cups, campus invites, scrim leagues.</p>
+          </div>
+          <b>ACTIVE</b>
+        </div>
+        <div class="honor">
+          <span class="year">NOW</span>
+          <div>
+            <h3>BGIS Ambition Track</h3>
+            <p>Building toward Battlegrounds Mobile India Series qualification pathway.</p>
+          </div>
+          <b>TARGET</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="matches">
+      <div class="section-head">
+        <p class="kicker">03 — MATCH FEED</p>
+        <h2>Upcoming Heat</h2>
+      </div>
+      <div class="match-board">
+        <div class="match">
+          <div class="match-when">FRI · 21:00 IST</div>
+          <div class="match-vs">
+            <span>TEAM NOOB</span>
+            <em>VS</em>
+            <span>TBD</span>
+          </div>
+          <div class="match-meta">Community Cup · Custom · Erangel</div>
+        </div>
+        <div class="match">
+          <div class="match-when">SAT · 20:30 IST</div>
+          <div class="match-vs">
+            <span>TEAM NOOB</span>
+            <em>VS</em>
+            <span>SCRIM BLOCK</span>
+          </div>
+          <div class="match-meta">Pro Scrims · 6 rooms · Livik + Miramar</div>
+        </div>
+        <div class="match">
+          <div class="match-when">SUN · 18:00 IST</div>
+          <div class="match-vs">
+            <span>ACADEMY</span>
+            <em>VS</em>
+            <span>OPEN LOBBY</span>
+          </div>
+          <div class="match-meta">Talent hunt · Public custom codes drop on Discord</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section academy" id="academy">
+      <div class="academy-panel">
+        <p class="kicker">04 — NOOB ACADEMY</p>
+        <h2>If you still get called a noob, good.</h2>
+        <p>
+          Academy is where raw aim becomes role IQ. We run VOD reviews, drop-map theory,
+          and weekly tryouts. No pay-to-play. Performance only.
+        </p>
+        <ul class="pills">
+          <li>IGL school</li>
+          <li>Spray control labs</li>
+          <li>Zone math</li>
+          <li>Mental reset drills</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <div class="join-wrap">
+        <div>
+          <p class="kicker">05 — RECRUITMENT</p>
+          <h2>Drop with us.</h2>
+          <p>
+            Looking for IGL-minded players, disciplined assaulters, and content creators
+            who can clip a 1v4 without turning the org into a circus.
+          </p>
+          <ul class="reqs">
+            <li>18+ preferred · 16+ with guardian consent</li>
+            <li>Device: 90/120 FPS capable</li>
+            <li>Comms: Discord + Hindi / English</li>
+            <li>Availability: evenings IST + weekend tourneys</li>
+          </ul>
+        </div>
+        <form class="join-form" id="joinForm">
+          <label>
+            IGN / Role
+            <input type="text" name="ign" placeholder="e.g. Phantom · Assaulter" required />
+          </label>
+          <label>
+            Discord
+            <input type="text" name="discord" placeholder="username" required />
+          </label>
+          <label>
+            Why TEAM NOOB
+            <textarea name="why" rows="4" placeholder="One fight that defines you." required></textarea>
+          </label>
+          <button type="submit" class="btn primary full">Send Application</button>
+          <p class="form-note" id="formNote">Applications stay on-device in this demo build.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-brand">
+      <img class="brand-logo sm" src="assets/logo.jpg" alt="" />
+      TEAM NOOB eSPORTS
+    </div>
+    <p>Unofficial fan-made org site concept for BGMI. Not affiliated with KRAFTON.</p>
+    <div class="socials">
+      <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://discord.com" target="_blank" rel="noopener">Discord</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com" target="_blank" rel="noopener">X</a>
+    </div>
+  </footer>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
